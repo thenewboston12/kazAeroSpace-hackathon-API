@@ -1,0 +1,21 @@
+
+server:
+  host: 127.0.0.1
+  port: 8080
+  timeout:
+    server: 30
+    read: 15
+    write: 10
+    idle: 5
+  db:
+    dsn: postgres://tcjlhqyqlquihk:0627a2c28ad04ad1156766d1f16a69d628baf4e5314f253edc77f12a47fdd933@ec2-18-234-17-166.compute-1.amazonaws.com:5432/ddivnpplgspi00
+    maxOpenConns: 25
+    maxIdleConns: 25
+    maxIdleTime: 15m
+  trustedOrigins:
+    - https://kas-hackathon.herokuapp.com/
+
+
+# postgresql+psycopg2://yernar:yernar@localhost:5432/hw2
+
+# migrate -path=./migrations -database=postgres://tcjlhqyqlquihk:0627a2c28ad04ad1156766d1f16a69d628baf4e5314f253edc77f12a47fdd933@ec2-18-234-17-166.compute-1.amazonaws.com:5432/ddivnpplgspi00 up
